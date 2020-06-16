@@ -25,6 +25,11 @@
 		8E23B582245614AD009BF3DC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E23B581245614AD009BF3DC /* ComplicationController.swift */; };
 		8E23B584245614AD009BF3DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E23B583245614AD009BF3DC /* Assets.xcassets */; };
 		8E23B587245614AD009BF3DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E23B586245614AD009BF3DC /* Preview Assets.xcassets */; };
+		8E23B59A24561616009BF3DC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E23B59824561616009BF3DC /* Model.xcdatamodeld */; };
+		8E626965245DB42400B1340E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E626964245DB42400B1340E /* Helpers.swift */; };
+		8E626966245DB42400B1340E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E626964245DB42400B1340E /* Helpers.swift */; };
+		8EF380CA245DC12500320868 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF380C9245DC12500320868 /* UserModel.swift */; };
+		8EF380CC245DC16600320868 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF380CB245DC16600320868 /* NotificationsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +98,10 @@
 		8E23B586245614AD009BF3DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8E23B588245614AD009BF3DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E23B589245614AD009BF3DC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8E23B59924561616009BF3DC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8E626964245DB42400B1340E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		8EF380C9245DC12500320868 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8EF380CB245DC16600320868 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +145,7 @@
 		8E23B551245614AC009BF3DC /* Memento Mori */ = {
 			isa = PBXGroup;
 			children = (
+				8E23B5972456159E009BF3DC /* Models */,
 				8E23B552245614AC009BF3DC /* AppDelegate.swift */,
 				8E23B554245614AC009BF3DC /* SceneDelegate.swift */,
 				8E23B556245614AC009BF3DC /* ContentView.swift */,
@@ -143,6 +153,8 @@
 				8E23B55D245614AC009BF3DC /* LaunchScreen.storyboard */,
 				8E23B560245614AC009BF3DC /* Info.plist */,
 				8E23B55A245614AC009BF3DC /* Preview Content */,
+				8E626964245DB42400B1340E /* Helpers.swift */,
+				8EF380CB245DC16600320868 /* NotificationsController.swift */,
 			);
 			path = "Memento Mori";
 			sourceTree = "<group>";
@@ -188,6 +200,15 @@
 				8E23B586245614AD009BF3DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8E23B5972456159E009BF3DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E23B59824561616009BF3DC /* Model.xcdatamodeld */,
+				8EF380C9245DC12500320868 /* UserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +347,10 @@
 				8E23B553245614AC009BF3DC /* AppDelegate.swift in Sources */,
 				8E23B555245614AC009BF3DC /* SceneDelegate.swift in Sources */,
 				8E23B557245614AC009BF3DC /* ContentView.swift in Sources */,
+				8E626965245DB42400B1340E /* Helpers.swift in Sources */,
+				8EF380CC245DC16600320868 /* NotificationsController.swift in Sources */,
+				8EF380CA245DC12500320868 /* UserModel.swift in Sources */,
+				8E23B59A24561616009BF3DC /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E23B57A245614AD009BF3DC /* HostingController.swift in Sources */,
+				8E626966245DB42400B1340E /* Helpers.swift in Sources */,
 				8E23B578245614AD009BF3DC /* ContentView.swift in Sources */,
 				8E23B57E245614AD009BF3DC /* NotificationController.swift in Sources */,
 				8E23B57C245614AD009BF3DC /* ExtensionDelegate.swift in Sources */,
@@ -657,6 +683,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8E23B59824561616009BF3DC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8E23B59924561616009BF3DC /* Model.xcdatamodel */,
+			);
+			currentVersion = 8E23B59924561616009BF3DC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8E23B547245614AB009BF3DC /* Project object */;
 }
