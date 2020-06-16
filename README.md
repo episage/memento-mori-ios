@@ -1,3 +1,3 @@
 # memento-mori-ios
 
-![Alt text](screenshot.png?raw=true "Title")
+![Alt text](screenshot.png | width=150)
